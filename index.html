@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Visit London today!</title>
+        <!-- Adding fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&family=Parisienne&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="header">
+            <h1>Visit London today!</h1>
+        </div>
+        <!-- Flexbox container for 3 separate lists -->
+        <div class="information">
+            <div>
+                <h2 class="white border">Best places to eat</h2>
+                    <ul class="align-left">
+                        <li><a href="https://www.google.com/maps/place/PHO+S82/@51.5175039,-0.1190276,15z/data=!4m2!3m1!1s0x0:0xa45e55a6d4ebfc94?sa=X&ved=1t:2428&ictx=111">PHO S82</a>, Holborn</li>
+                        <li><a href="https://maps.app.goo.gl/sWVvQUWeNTA34Xk3A">Holy Smokes BBQ</a>, Bow Road</li>
+                        <li><a href="https://maps.app.goo.gl/BEjrTYHnn7Enb8Hq9">Honest Burgers</a>, South Kensington</li>
+                    </ul>
+            </div>
+            <div>
+                <h2>Best parks to visit</h2>
+                    <ul class="align-left">
+                        <li><a href="https://www.royalparks.org.uk/visit/parks/richmond-park">Richmond Park</a>, Richmond</li>
+                        <li><a href="https://www.royalparks.org.uk/visit/parks/regents-park-primrose-hill">Regent's Park</a>, Marylebone</li>
+                        <li><a href="https://www.royalparks.org.uk/visit/parks/hyde-park">Hyde Park</a>, Westminster</li>
+                    </ul>
+            </div>
+            <div>
+                <h2>Best attractions</h2>
+                    <ul class="align-left">
+                        <li><a href="https://www.londoneye.com/">London Eye</a>, Waterloo</li>
+                        <li><a href="https://skygarden.london/">Sky Garden</a>, Monument</li>
+                        <li><a href="https://www.madametussauds.com/london/">Madame Tussauds</a>, Marylebone</li>
+                    </ul>
+            </div>
+        </div>
+        <!-- End of flexbox container for 3 separate lists -->
+        <div class="links-info">
+            <p>Click the links above for the websites and locations of the mentioned places.</p>
+        </div>
+
+        <!-- Flexbox container for 3 separate images -->
+        <div class="flexbox-images">
+            <div>
+                <img id="honest-burgers" src="images/honest-burgers-south-kensington.jpg" alt="Honest Burgers restaurant in South Kensington">
+                <p>Honest Burgers in South Kensington</p>
+            </div>
+            <div>
+                <img id="richmond-park" src="images/richmond-park.jpg" alt="Richmond Park with deer laying on the grass">
+                <p>Richmond Park</p>
+            </div>
+            <div>
+                <img id="sky-garden" src="images/sky-garden.jpg" alt="Sky Garden during sunset. Trees and plants at the border of the image, covered in golden light">
+                <p>Sky Garden</p>
+            </div>
+            
+        </div>
+        <!-- End of flexbox container for 3 separate images -->  
+        
+        <!-- CYF Blocks section -->
+        <p>Can't decide where to go from the list? Use the random generator! </p>
+        <p>You should visit <u id="random-place">___</u>!</p>
+        <input id="text" placeholder="Enter your top 3 picks"/>
+        <ul id="list"></ul>
+        <button id="list-button">Enter</button>
+        <button id="reset-button">Reset</button>
+
+
+        <!-- Suggestions section -->
+        <div class="suggestions">
+            <h3>Provide your suggestions below!</h3>
+            <input type="text" placeholder="Enter your suggestions">
+            <button id="comment-button">Add comment</button>
+        </div>
+      
+    <!-- Embedding java script -->
+    <script src="CYF-blocks.js"></script>
+    </body>
+</html>
